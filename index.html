@@ -16,6 +16,14 @@
   <!-- Import the CPM test classes -->
   <script src="./js/test/utils/TestingUtilities.js"></script>
   <script src="./js/main/MainApplication.js"></script>
+  <!-- <script type="text/javascript">
+    console.log("hello")
+    function submit(){
+      console.log("clicked")
+      document.getElementById("name").innerText = "clicked"
+
+    }
+  </script> -->
 
 </head>
 
@@ -26,9 +34,26 @@
 <body>
   <!-- body begins here -->
 
-  View the `Console` tab of the `Developer Tools` to see output of the JavaScript Files
 
+  <form id="myform">
+    <label for="name">Name:</label>
+    <br>
+    <input id="name" type="text">
+    <br>
+    <br>
+    <label for="power">Select power type</label>
+    <select id="power">
 
+      <option value="fly">fly</option>
+      <option value="speed">speed</option>
+      <option value="strength">strength</option>
+    </select>
+  
+  </form>
+  <br>
+  <button type="submit" onclick="submit()">Submit</button>
+
+  <p id="results"></p>
 
 
   <!-- ====================================================== -->
