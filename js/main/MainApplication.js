@@ -1,4 +1,7 @@
 function submit(){
     console.log("submitted form")
-    document.getElementById("name").innerHTML = "clicked"
+   const name = document.getElementById("name").value;
+   const power = document.getElementById("power").value;
+   const results = `your name is: ${name} and your power type is: ${power}`
+   document.getElementById("results").innerText = results
 }
